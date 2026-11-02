@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SideGuard"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="16dp"
+            android:text="Vet an APK before you sideload it, and jump to the toggles you keep needing." />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vet an APK to install" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#33000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick shortcuts"
+            android:textStyle="bold"
+            android:paddingBottom="6dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAutoBlocker"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Auto Blocker" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUnknownSources"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allow SideGuard to install apps" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPlayProtect"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Play Protect" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddTile"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Add Auto Blocker tile to Quick Settings" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#33000000" />
+
+        <TextView
+            android:id="@+id/vpnState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VPN tunnel: …"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVpn"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Mullvad" />
+
+        <TextView
+            android:id="@+id/vtState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="VirusTotal: …" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVtKey"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set / change VirusTotal key" />
+
+    </LinearLayout>
+</ScrollView>
